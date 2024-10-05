@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #006994;
+    --secondary-color: #559bb8;
+    --accent1-color: #aacddb;
+    --accent-color2: #FFFFFF;
+    --general-margin: 10px;
+    --general-padding: 10px;
+    --general-heading: 'lora', serif;
+    --uptodown-padding: 10px 0 10px 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    margin: var(--general-margin);
+}
+h1 h2 h3 {
+    font-family: 'lora', serif;
+}
+
+h2 {
+    margin: var(--general-margin);
+    color: var(--accent-color2);
+}
+
+p {
+    margin: var(--general-margin);
+    padding: var(--general-padding);
+}
+
+footer {
+    text-align: center;
+}
+
+/*  class selectors  */
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 65%;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero article {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    font-family: var(--general-paragraphs);
+    left: 50%;
+    color: var(--accent-color2);
+    background-color:  rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    padding: var(--uptodown-padding);
+    margin: var(--general-margin);
+    margin-left: -150px;
+    font-size: 8px;
+}
+.hero article img {
+    float: right;
+    width: 200px;
+    height: auto;
+    padding: var(--general-padding);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    color: var(--accent1-color);
+    font-family: 'lora', serif;
+    text-align: center;
+    padding: var(--uptodown-padding);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+}
+
+.social-links {
+    display: block;
+}
+
+.social-links img {
+    width: 32px;
+}

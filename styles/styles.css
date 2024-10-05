@@ -5,6 +5,7 @@
     --margin: 1.5rem;
     --text-align: center;
     --padding: 10px;
+    --border2: 2px dashed rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -24,6 +25,10 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -59,7 +64,13 @@ aside {
 aside h2 {
     position: absolute;
     color: #000;
-    left: 123px;
+    left: 100px;
+}
+
+hr {
+    height: 5px;
+    background-color: gray;
+    margin-left: 24px;
 }
 
 aside img {
@@ -71,7 +82,7 @@ main img {
     width: 150px;
     height: auto;
     float: right;
-    border: 2px dashed rgba(0, 0, 0, 0.1);
+    border: var(--border2);
     padding: 2px;
     margin: var(--margin);
     margin-right: 50px;
