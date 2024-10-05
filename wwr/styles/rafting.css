@@ -34,7 +34,7 @@ h1 h2 h3 {
 
 h2 {
     margin: var(--general-margin);
-    color: var(--accent-color2);
+    color: var(--accent-color1);
 }
 
 p {
