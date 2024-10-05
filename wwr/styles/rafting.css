@@ -5,8 +5,7 @@
     --accent-color2: #FFFFFF;
     --general-margin: 10px;
     --general-padding: 10px;
-    --general-heading: 'lora', serif;
-    --uptodown-padding: 10px 0 10px 0;
+    --padding: 10px 0 10px 0;
 }
 
 
@@ -69,12 +68,12 @@ footer {
     position: absolute;
     top: 30%;
     width: 50%;
-    font-family: var(--general-paragraphs);
+    font-family: 'Oswald', sans-serif;
     left: 50%;
     color: var(--accent-color2);
     background-color:  rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    padding: var(--uptodown-padding);
+    padding: var(--padding);
     margin: var(--general-margin);
     margin-left: -150px;
     font-size: 8px;
@@ -93,7 +92,7 @@ footer {
     color: var(--accent1-color);
     font-family: 'lora', serif;
     text-align: center;
-    padding: var(--uptodown-padding);
+    padding: var(--padding);
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 40px;
 }
