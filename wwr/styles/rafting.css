@@ -18,6 +18,7 @@
 body {
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
+    background-color: var(--secondary-color);
 }
 
 html, body{
@@ -25,9 +26,39 @@ html, body{
     height: 100%;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    padding: var(--general-padding);
+    background-color: var(--secondary-color);
+}
+
+header img {
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
     margin: var(--general-margin);
 }
+
+.top-nav {
+    display: flex;
+    list-style: none;
+    flex: 1 1 100%;
+    justify-content: space-around;
+}
+
+.top-nav a {
+    color: var(--accent1-color);
+}
+
+.top-nav a:hover {
+    color: var(--primary-color);
+}
+
 h1 h2 h3 {
     font-family: 'lora', serif;
 }
@@ -35,6 +66,52 @@ h1 h2 h3 {
 h2 {
     margin: var(--general-margin);
     color: var(--accent-color1);
+    border-bottom: solid;
+    padding: var(--general-padding);
+    text-align: center;
+}
+
+section {
+    border: solid var(--accent-color1);
+    border-radius: 10px;
+    margin:  var(--general-margin);
+    background-color: var(--accent-color2);
+}
+.history {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--general-margin);
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.history p {
+    flex: 3;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    margin: var(--general-margin);
+    padding: var(--general-padding);
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.adventure img {
+    max-width: 90%;
 }
 
 p {
@@ -43,7 +120,13 @@ p {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+footer {
     text-align: center;
+    grid-column: 1;
 }
 
 /*  class selectors  */
@@ -53,6 +136,7 @@ footer {
     width: 100%;
     height: auto;
     top: 65%;
+    padding-bottom: 1em;
 }
 
 .images-view {
@@ -99,8 +183,22 @@ footer {
 
 .social-links {
     display: block;
+    grid-column: 2;
+    align-items: center;
+    gap: 1em;
+    margin-right: 2rem;
 }
 
 .social-links img {
-    width: 32px;
+    width: 2em;
+}
+
+/****************** ID selectors ************************/
+
+#one {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#two {
+    grid-area: 2 / 3 / 3 / 4;
 }
