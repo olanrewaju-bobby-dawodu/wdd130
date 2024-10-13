@@ -36,8 +36,8 @@ header {
 }
 
 header img {
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 nav {
@@ -49,10 +49,14 @@ nav {
     list-style: none;
     flex: 1 1 100%;
     justify-content: space-around;
+    gap: 5px;
 }
 
 .top-nav a {
-    color: var(--accent1-color);
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .top-nav a:hover {
@@ -77,6 +81,7 @@ section {
     margin:  var(--general-margin);
     background-color: var(--accent-color2);
 }
+
 .history {
     display: flex;
     justify-content: space-around;
@@ -87,7 +92,7 @@ section {
     width: 200px;
     height: auto;
     flex: 1 1 auto;
-    align-items: center;
+    align-self: center;
 }
 
 .history p {
@@ -97,7 +102,7 @@ section {
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     margin: var(--general-margin);
     padding: var(--general-padding);
 }
@@ -129,13 +134,13 @@ footer {
     grid-column: 1;
 }
 
-/*  class selectors  */
+/* class selectors */
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
-    top: 65%;
+    top: 50%;
     padding-bottom: 1em;
 }
 
@@ -151,17 +156,17 @@ footer {
 .hero article {
     position: absolute;
     top: 30%;
-    width: 50%;
+    width: 63%;
     font-family: 'Oswald', sans-serif;
     left: 50%;
     color: var(--accent-color2);
     background-color:  rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    padding: var(--padding);
     margin: var(--general-margin);
-    margin-left: -150px;
-    font-size: 8px;
+    transform: translate(-50%);
+    font-size: 6px;
 }
+
 .hero article img {
     float: right;
     width: 200px;
@@ -178,7 +183,7 @@ footer {
     text-align: center;
     padding: var(--padding);
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .social-links {
@@ -193,7 +198,7 @@ footer {
     width: 2em;
 }
 
-/****************** ID selectors ************************/
+/* ID selectors */
 
 #one {
     grid-area: 2 / 2 / 3 / 3;
