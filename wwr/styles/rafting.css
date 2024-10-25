@@ -58,10 +58,6 @@ nav {
     color: var(--primary-color);
 }
 
-h1 h2 h3 {
-    font-family: 'lora', serif;
-}
-
 h2 {
     margin: var(--general-margin);
     color: var(--accent-color1);
