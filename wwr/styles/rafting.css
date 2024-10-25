@@ -21,11 +21,6 @@ body {
     background-color: var(--secondary-color);
 }
 
-html, body{
-    max-width: 100%;
-    height: 100%;
-}
-
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -127,9 +122,6 @@ p {
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
-}
-
-footer {
     text-align: center;
     grid-column: 1;
 }
