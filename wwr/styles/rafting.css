@@ -69,8 +69,10 @@ h2 {
 section {
     border: solid var(--accent-color1);
     border-radius: 10px;
-    margin:  var(--general-margin);
+    margin:  var(--general-margin) auto;
+    padding: var(--general-padding);
     background-color: var(--accent-color2);
+    max-width: 80%;
 }
 
 .history {
@@ -197,6 +199,12 @@ fieldset {
     border: 1px solid rgba(252, 226, 3, 0.5);
     border-radius: 0.5rem;
     padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3em;
 }
 
 label {
@@ -380,6 +388,235 @@ button:hover {
 .checkbox-container {
     display: inline-block;
 }
+
+.table-container {
+    width: auto;
+    margin: 0 auto;
+    padding: var(--padding);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent-color2);
+}
+
+table {
+    max-width: 80%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+table button {
+    background-color: var(--accent-color2);
+    border: 2px solid var(--primary-color);
+    color: black;
+}
+
+table button:hover {
+    background-color: var(--accent1-color);
+}
+
+caption h2 {
+    border: none;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--accent1-color);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent-color2);
+}
+
+.contact-title, .trips-title {
+    font-family: Oswald, Georgia, serif;
+    color: var(--accent1-color);
+    font-size: 22px;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: var(--general-padding);
+}
+
+.trips {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    padding: var(--general-padding);
+}
+
+.trip h2 {
+    margin: 0 0 0.5em 0;
+}
+
+.trip p {
+    margin: 5em 0 0 0;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: start;
+    margin: var(--general-margin);
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1.15em;
+    background-color: var(--accent-color2);
+}
+
+.trip:nth-child(odd) {
+    grid-template-areas: "image text";
+}
+
+.trip:nth-child(even) {
+    grid-template-areas: "text image";
+}
+
+.trip h2, .trip p {
+    grid-area: text;
+}
+
+.trip img {
+    grid-area: image;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hero-image-right .call-to-action {
+    position: absolute;
+    max-width: 350px;
+    top: 50%;
+    left: auto;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: black;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.15em;
+}
+
+.call-to-action h2 {
+    font-family: Arial, Georgia, serif;
+    color: var(--accent1-color);
+}
+
+.call-to-action button {
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.call-to-action button:hover {
+    background-color: navy;
+    color: var(--accent-color2);
+}
+
+.purpose-offers {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 5em;
+    text-align: center;
+    justify-items: center;
+    padding: var(--general-padding);
+}
+
+.purpose-offers p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.purpose-offers img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.purpose-offers article:nth-child(1) img {
+    order: 1;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.purpose-offers article:nth-child(1) h2,
+.purpose-offers article:nth-child(1) p {
+    border: none;
+    grid-column: 1;
+    text-align: center;
+}
+
+.purpose-offers article:nth-child(2) img {
+    order: 1;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.purpose-offers article:nth-child(2) h2,
+.purpose-offers article:nth-child(2) p {
+    border: none;
+    grid-column: 2;
+    text-align: center;
+}
+
+.newsletter {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: var(--general-padding);
+    border: solid var(--accent1-color);
+    background-color: var(--accent1-color);
+}
+
+.newsletter label {
+    text-align: left;
+}
+.newsletter img {
+    width: 200px;
+    height: auto;
+}
+
+.newsletter legend {
+    text-align: center;
+}
+
+.newsletter h2 {
+    display: inline-block;
+    border-bottom: var(--primary-color) 2px solid;
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.newsletter fieldset {
+    border: none;
+    padding: 0 30px 0 30px;
+    color: var(--primary-color);
+    font-size: 1.15em;
+}
+
+.newsletter button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.newsletter button:hover {
+    background-color: navy;
+}
+
 
 .social-links {
     display: block;
